@@ -13,3 +13,5 @@ image: "/uploads/SerpicoHomepageVideo.gif"
 * See when your competitors change bids on your keywords
 * Gain insight into your competitor's strategies
 * Learn what is helping competitors succeed
+
+[Login](https://app.serpico.io/login "Login to Serpico")
