@@ -35,5 +35,10 @@ fields:
     - Nichlas W. Andersen
   label: Author
   default: Nichlas W. Andersen
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
 pages:
 - journal/macos-development-environment.md
