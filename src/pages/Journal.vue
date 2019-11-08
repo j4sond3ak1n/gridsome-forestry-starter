@@ -1,13 +1,5 @@
 <template>
   <Layout>
-
-    <div class="container">
-      <div class="journal-hero">
-        <h1 class="journal-header">
-          a wise person once said...
-        </h1>
-      </div>
-    </div>
     <g-link 
       :to="item.node.path"
       v-for="item in $page.posts.edges" 
@@ -19,7 +11,6 @@
         <p class="journal-excerpt">{{ item.node.excerpt }}</p>
       </div>
     </g-link>
-      
   </Layout>
 </template>
 
