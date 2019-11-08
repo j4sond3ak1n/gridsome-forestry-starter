@@ -1,4 +1,9 @@
 ---
 label: Media
 hide_body: false
-fields: []
+fields:
+- name: media
+  type: file
+  config:
+    maxSize: 250
+  label: Media
