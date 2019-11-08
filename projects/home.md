@@ -11,4 +11,4 @@ project_fg_color: ''
 
 #### Utilise the world's best tools and talent
 
-![](/uploads/serpico-homepage-video_new-14.gif)
+![](/uploads/SerpicoHomepageVideo.gif)
