@@ -1,4 +1,14 @@
 ---
 label: Section
 hide_body: false
-fields: []
+fields:
+- name: content_container
+  type: include
+  config: {}
+  template: content
+  label: Content container
+- name: media_container
+  type: include
+  config: {}
+  template: media
+  label: Media container
