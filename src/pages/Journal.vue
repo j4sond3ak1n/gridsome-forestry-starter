@@ -8,7 +8,6 @@
         </h1>
       </div>
     </div>
-
     <g-link 
       :to="item.node.path"
       v-for="item in $page.posts.edges" 
