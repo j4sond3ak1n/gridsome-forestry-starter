@@ -1,12 +1,15 @@
 ---
 date: 2019-05-16
-title: macOS development environment
+title: Search Tech & Tools - Section 2
 author: Nichlas W. Andersen
 excerpt: Get up and running with a fresh macOS Mojave install
+image: ''
 
 ---
-### Install Homebrew
+### Audit and know more about your campaigns.  
+All the time. In real time.
 
-    $ brew brew brew
-
-Enjoy your new system! 🎉
+* Constantly monitor campaign performance
+* Receive alerts if campaigns are underperforming as they happen
+* Prevent mistakes
+* Monitor competitors affecting your performance
