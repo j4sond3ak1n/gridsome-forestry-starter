@@ -1,5 +1,5 @@
 ---
-label: Journal
+label: About
 hide_body: false
 fields:
 - type: text
@@ -17,5 +17,3 @@ fields:
   config:
     maxSize: 250
   label: Image
-pages:
-- journal/macos-development-environment.md
