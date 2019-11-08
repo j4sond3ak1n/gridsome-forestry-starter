@@ -2,11 +2,11 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
-  siteUrl: `https://www.itsnwa.com`,
+  siteName: "Serpico",
+  siteUrl: `https://www.serpico.io`,
   host: "0.0.0.0",
-  titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
+  titleTemplate: "Serpico - %s",
+  siteDescription: "Serpico",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
@@ -23,8 +23,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "google-marketing-platform-services/**/*.md",
-        typeName: "GoogleMarketingPlatformServicesPost",
+        path: "journal/**/*.md",
+        typeName: "JournalPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
