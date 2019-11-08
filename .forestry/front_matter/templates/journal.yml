@@ -8,9 +8,8 @@ fields:
   config:
     required: true
 - type: textarea
-  name: excerpt
-  label: Excerpt
-  description: Short snippet that will show outside of the actual post
+  name: body
+  label: Body
   config:
     required: true
 - name: image
