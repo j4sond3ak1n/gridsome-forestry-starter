@@ -1,5 +1,5 @@
 ---
-thumbnail: "/uploads/serpico-homepage-video_new-14.gif"
+thumbnail: "/uploads/SerpicoHomepageVideo.gif"
 title: Home
 date: 2019-01-04
 categories: []
