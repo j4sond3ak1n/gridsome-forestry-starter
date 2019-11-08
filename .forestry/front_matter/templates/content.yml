@@ -1,4 +1,27 @@
 ---
 label: Content
 hide_body: false
-fields: []
+fields:
+- name: header
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Header
+- name: body
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Body
+- name: image
+  type: file
+  config:
+    maxSize: 250
+  label: Image
