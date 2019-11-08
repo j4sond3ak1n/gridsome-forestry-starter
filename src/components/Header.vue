@@ -11,9 +11,10 @@
                 </g-link>
             </div>
             <nav class="nav right">
-                <g-link class="nav__link" to="/google-marketing-platform-services">Google Marketing Platform Services</g-link>
-                <g-link class="nav__link" to="/journal">Journal</g-link>
-                <g-link class="nav__link" to="/contact">Say Hi!</g-link>
+                <g-link class="nav__link" to="/journal">Google Marketing Platform Services</g-link>
+                <g-link class="nav__link" to="/journal">Search Tech & Tools</g-link>
+                <g-link class="nav__link" to="/journal">About</g-link>
+                <g-link class="nav__link" to="/contact">Contact us</g-link>
             </nav>
         </div>
     </header>
@@ -52,7 +53,7 @@ export default {
     text-decoration: none;
 }
 .logo {
-    height: 5.5rem;
+    height: 5rem;
 }
 .site-name {
     font-size: 0.9rem;
