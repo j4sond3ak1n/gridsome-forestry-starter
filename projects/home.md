@@ -5,8 +5,8 @@ date: 2019-01-04
 categories:
 - photography
 - yellow
-project_bg_color: ''
-project_fg_color: "#FDC70D"
+project_bg_color: '#a799fa'
+project_fg_color: ''
 
 ---
 ![](/uploads/serpico-homepage-video_new-14.gif)

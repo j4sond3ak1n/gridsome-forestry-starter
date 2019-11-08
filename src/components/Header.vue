@@ -12,6 +12,7 @@
             </div>
             <nav class="nav right">
                 <g-link class="nav__link" to="/journal">Journal</g-link>
+                <g-link class="nav__link" to="/journal">Journal</g-link>
                 <g-link class="nav__link" to="/contact">Say Hi!</g-link>
             </nav>
         </div>
@@ -51,7 +52,7 @@ export default {
     text-decoration: none;
 }
 .logo {
-    height: 1.5rem;
+    height: 5.5rem;
 }
 .site-name {
     font-size: 0.9rem;
