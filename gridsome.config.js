@@ -23,8 +23,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "journal/**/*.md",
-        typeName: "JournalPost",
+        path: "google-marketing-platform-services/**/*.md",
+        typeName: "GoogleMarketingPlatformServicesPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
