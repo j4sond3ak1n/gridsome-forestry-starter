@@ -36,8 +36,8 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
-- projects/chelsea-landmark.md
 - projects/in-house-digital-marketing-better-faster-easier.md
+- projects/chelsea-landmark.md
 - projects/3d-graff.md
 - projects/ios-concept.md
 - projects/sunk.md
