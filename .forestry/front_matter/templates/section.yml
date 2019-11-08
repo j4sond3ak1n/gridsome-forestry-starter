@@ -12,3 +12,5 @@ fields:
   config: {}
   template: media
   label: Media container
+pages:
+- SearchTechTools_2.md
