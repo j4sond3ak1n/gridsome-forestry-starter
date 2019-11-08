@@ -12,3 +12,5 @@ media: ''
 * Get informed of opportunities as they happen
 * Prevent mistakes
 * Monitor competitors affecting your performance
+
+![](/uploads/serpico-dashboard-lozenges.png)
