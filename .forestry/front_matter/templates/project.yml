@@ -36,6 +36,7 @@ fields:
     color_format: Hex
   label: Foreground color
 pages:
+- projects/banana.md
 - projects/chelsea-landmark.md
 - projects/pineapple.md
 - projects/sunk.md
