@@ -1,9 +1,10 @@
 <template>
-  <div class="layout" :class="{ 'sticky-header': $route.path === '/' }">
-    <Header />
-    <slot/>
-    <Footer />
-  </div>
+  <v-app>
+      <core-top-blob />
+      <Header />
+      <slot/>
+      <Footer />
+  </v-app>
 </template>
 
 <script>
@@ -13,7 +14,8 @@ import Footer from "@/components/Footer"
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    CoreTopBlob: () => import('@/components/core/TopBlob'),
   }
 }
 </script>

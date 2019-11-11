@@ -1,20 +1,21 @@
 <template>
-    <v-app class="v-application-wrap">
-        <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
-            <div class="container">
-                <div class="left">
-                    <g-link :to="{ name: 'home' }" class="home-link">
-                        <g-image 
-                            src="../../static/logo.svg"
-                            :alt="settings.site_name" 
-                            class="logo"
-                        />
-                    </g-link>
-                </div>
-                <nav class="nav">
-                    <v-menu offset-y open-on-hover>
+    <v-app class="v-application-wrap white" style="z-index: 1">
+        <v-container>
+            <v-layout>
+                    <nav class="nav">
+                        <v-flex>
+                            <g-link :to="{ name: 'home' }" >
+                                <g-image 
+                                    src="../../static/logo.svg"
+                                    :alt="settings.site_name" 
+                                    style="height: 6rem;"
+                                />
+                            </g-link>
+                        </v-flex>
+                        <v-flex>
+                            <v-menu offset-y open-on-hover>
                         <template v-slot:activator="{ on }">
-                            <g-link>
+                            <g-link style="text-decoration: none">
                                 <v-btn
                                     text
                                     v-on="on"
@@ -37,7 +38,7 @@
                     </v-menu>
                     <v-menu offset-y open-on-hover>
                         <template v-slot:activator="{ on }">
-                            <g-link>
+                            <g-link style="text-decoration: none">
                                 <v-btn
                                     text
                                     v-on="on"
@@ -58,11 +59,13 @@
                             </v-list-item>
                         </v-list>
                     </v-menu>
-                    <g-link class="nav__link" to="/about"><v-btn style="text-transform: none" text>About</v-btn></g-link>
-                    <g-link class="nav__link" to="/contact"><v-btn style="text-transform: none" text>Contact us</v-btn></g-link>
+                     <g-link class="nav__link" to="/about" style="text-decoration: none"><v-btn style="text-transform: none" text>About</v-btn></g-link>
+                    <g-link class="nav__link" to="/contact" style="text-decoration: none"><v-btn style="text-transform: none" color="error" rounded>Contact us</v-btn></g-link>
+                        </v-flex>
+                   
                 </nav>
-            </div>
-        </header> 
+            </v-layout>
+        </v-container>
     </v-app> 
 </template>
 
@@ -99,34 +102,8 @@ export default {
 .v-application-wrap {
     max-height: 10vh !important;
 }
-.header.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.header > .container {
+.nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    height: 5rem;
-}
-.site-name {
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-decoration: none; 
-}
-.nav > * {
-    text-decoration: none;
-    margin-right: 3rem;
-}
-.nav > *:last-of-type {
-    margin: 0;
-}
-.nav > .active {
-    border-color: inherit;
 }
 </style>
