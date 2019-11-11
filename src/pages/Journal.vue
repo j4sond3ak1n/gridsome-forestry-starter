@@ -29,11 +29,6 @@ query Journal {
 }
 </page-query>
 
-<script>
-export default {
-}
-</script>
-
 <style scoped>
 .container.journal {
   max-width: 720px;
@@ -48,15 +43,6 @@ export default {
   font-weight: 700;
   padding: 0;
   margin: 0;
-}
-.journal-post {
-  display: block;
-  padding: 2rem 0;
-  text-decoration: none;
-  transition: background 0.5s ease;
-}
-.journal-post > * {
-  transition: transform 0.5s ease;
 }
 .journal-post:hover {
   background-color: var(--color-base-1);

@@ -56,8 +56,8 @@
                             </v-list-item>
                         </v-list>
                     </v-menu>
-                    <g-link class="nav__link" to="/project">Project</g-link>
-                    <g-link class="nav__link" to="/contact">Contact us</g-link>
+                    <g-link class="nav__link" to="/project"><v-btn text>Project</v-btn></g-link>
+                    <g-link class="nav__link" to="/contact"><v-btn text>Contact us</v-btn></g-link>
                 </nav>
             </div>
         </header>
@@ -105,10 +105,6 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100%;
-}
-.home-link {
-    text-decoration: none;
 }
 .logo {
     height: 5rem;
@@ -117,25 +113,14 @@ export default {
     font-size: 0.9rem;
     font-weight: 700;
     letter-spacing: 0.05em;
-    text-decoration: none;
-    text-transform: uppercase;   
+    text-decoration: none; 
 }
 .nav > * {
-    font-size: 0.9rem;
-    font-weight: 600;
     text-decoration: none;
-    margin-top: 4px;
     margin-right: 3rem;
-    padding-bottom: 4px;
-    border-bottom: 1px solid;
-    border-color: transparent;
-    transition: border 0.15s;
 }
 .nav > *:last-of-type {
     margin: 0;
-}
-.nav > *:hover {
-    border-color: inherit;
 }
 .nav > .active {
     border-color: inherit;

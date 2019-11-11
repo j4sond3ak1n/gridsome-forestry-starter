@@ -55,9 +55,6 @@ export default {
   text-decoration: none;
   transition: background 0.5s ease;
 }
-.journal-post > * {
-  transition: transform 0.5s ease;
-}
 .journal-post:hover {
   background-color: var(--color-base-1);
 }
