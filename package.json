@@ -10,7 +10,23 @@
     "@gridsome/remark-prismjs": "0.1.0",
     "@gridsome/source-filesystem": "^0.5.0",
     "@gridsome/transformer-remark": "^0.3.2",
+    "add": "^2.0.6",
+    "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
-    "gridsome": "^0.6.7"
+    "gridsome": "^0.6.7",
+    "material-design-icons-iconfont": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "vue": "^2.6.10",
+    "vue-meta": "^2.3.1",
+    "vuetify": "^2.1.9",
+    "yarn": "^1.19.1"
+  },
+  "devDependencies": {
+    "deepmerge": "^4.2.2",
+    "fibers": "^4.0.2",
+    "sass": "^1.23.3",
+    "sass-loader": "^8.0.0",
+    "style-resources-loader": "^1.3.2",
+    "webpack-node-externals": "^1.7.2"
   }
 }

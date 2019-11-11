@@ -1,22 +1,67 @@
 <template>
-    <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
-        <div class="container">
-            <div class="left">
-                <g-link :to="{ name: 'home' }" class="home-link">
-                    <g-image 
-                        src="../../static/logo.svg"
-                        :alt="settings.site_name" 
-                        class="logo"
-                    />
-                </g-link>
+    <v-app>
+        <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
+            <div class="container">
+                <div class="left">
+                    <g-link :to="{ name: 'home' }" class="home-link">
+                        <g-image 
+                            src="../../static/logo.svg"
+                            :alt="settings.site_name" 
+                            class="logo"
+                        />
+                    </g-link>
+                </div>
+                <nav class="nav right">
+                    <v-menu offset-y open-on-hover>
+                        <template v-slot:activator="{ on }">
+                            <g-link>
+                                <v-btn
+                                    text
+                                    v-on="on"
+                                    :to="$url('/google-marketing-platform-services/')"
+                                    >
+                                    Google Marketing Platform Services
+                                </v-btn>
+                            </g-link>
+                        </template> 
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in googleItems"
+                            :key="index"
+                            :to="$url(`${item.url}`)"
+                            >
+                            <v-list-item-title>{{item.title}}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu>
+                    <v-menu offset-y open-on-hover>
+                        <template v-slot:activator="{ on }">
+                            <g-link>
+                                <v-btn
+                                    text
+                                    v-on="on"
+                                    :to="$url('/search-tech-and-tools/')"
+                                    >
+                                    Search Tech & Tools
+                                </v-btn>
+                            </g-link>
+                        </template>
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in searchItems"
+                            :key="index"
+                            :to="$url(`${item.url}`)"
+                            >
+                            <v-list-item-title>{{item.title}}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu>
+                    <g-link class="nav__link" to="/project">Project</g-link>
+                    <g-link class="nav__link" to="/contact">Contact us</g-link>
+                </nav>
             </div>
-            <nav class="nav right">
-                <g-link class="nav__link" to="/journal">Google Marketing Platform Services</g-link>
-                <g-link class="nav__link" to="/project">Project</g-link>
-                <g-link class="nav__link" to="/contact">Contact us</g-link>
-            </nav>
-        </div>
-    </header>
+        </header>
+    </v-app> 
 </template>
 
 <script>
@@ -24,18 +69,32 @@ export default {
   data() {
     return {
         logo: require("../../static/logo.svg"),
-        settings: require("../../data/theme.json")
+        settings: require("../../data/theme.json"),
+        googleItems: [
+            { title: 'Search Ads 360', url: '/google-marketing-platform-services/search-ads360' },
+            { title: 'Display & Video 360', url: '/google-marketing-platform-services/display-and-video360' },
+            { title: 'Google Analytics 360', url: '/google-marketing-platform-services/google-analytics360' },
+            { title: 'Optimize 360', url: '/google-marketing-platform-services/optimize360' },
+            { title: 'Data Studio 360', url: '/google-marketing-platform-services/data-studio360' },
+            { title: 'Campaign Manager', url: '/google-marketing-platform-services/campaign-manager' },
+            { title: 'Cloud', url: '/google-marketing-platform-services/cloud' },
+            { title: 'Creative', url: '/google-marketing-platform-services/creative' },
+            { title: 'AMP', url: '/google-marketing-platform-services/amp' },
+            { title: 'Case Studies', url: '/google-marketing-platform-services/case-studies' },
+            { title: 'Service Offering', url: '/google-marketing-platform-services/service-offering' }
+        ],
+        searchItems: [
+            { title: 'Paid search', url: '/search-tech-and-tools/paid-search' },
+            { title: 'Organic search', url: '/search-tech-and-tools/organic-search' },
+            { title: 'Benchmarking', url: '/search-tech-and-tools/benchmarking' },
+        ]
     }
   }
 }
 </script>
 
 <style scoped>
-.header {
-    position: relative;
-    height: 6rem;
-    z-index: 10;
-}
+
 .header.sticky {
     position: fixed;
     top: 0;

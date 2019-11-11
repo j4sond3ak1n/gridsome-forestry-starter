@@ -51,6 +51,8 @@ h1 {
 
 .layout {
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .layout.sticky-header {

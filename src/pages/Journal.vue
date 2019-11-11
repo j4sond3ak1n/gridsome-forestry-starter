@@ -61,9 +61,6 @@ export default {
 .journal-post:hover {
   background-color: var(--color-base-1);
 }
-.journal-post:hover > * {
-  transform: translateX(4rem);
-}
 .journal-post h1,
 .journal-post h2 {
   margin: 0;

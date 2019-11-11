@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout class="content">
     <div class="container">
       <!-- Home page to add home page content -->
       <Hero />
