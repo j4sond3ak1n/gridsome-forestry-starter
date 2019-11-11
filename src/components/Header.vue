@@ -12,6 +12,7 @@
             </div>
             <nav class="nav right">
                 <g-link class="nav__link" to="/journal">Google Marketing Platform Services</g-link>
+                <g-link class="nav__link" to="/project">Project</g-link>
                 <g-link class="nav__link" to="/contact">Contact us</g-link>
             </nav>
         </div>
