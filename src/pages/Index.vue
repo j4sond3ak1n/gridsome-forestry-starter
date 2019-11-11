@@ -1,11 +1,17 @@
 <template>
   <Layout class="content">
-    <div class="container">
-      <!-- Home page to add home page content -->
-      <Hero />
-      <ProjectsGrid :projects="$page.projects.edges" />
-    </div>
-    <LatestJournals :journals="$page.journals.edges" />
+    <v-container>
+      <v-layout>
+        <v-flex>
+          <div class="container">
+            <!-- Home page to add home page content -->
+            <Hero />
+            <ProjectsGrid :projects="$page.projects.edges" />
+          </div>
+          <LatestJournals :journals="$page.journals.edges" />
+        </v-flex>
+      </v-layout>
+    </v-container>
   </Layout>
 </template>
 
