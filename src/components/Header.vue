@@ -58,7 +58,7 @@
                             </v-list-item>
                         </v-list>
                     </v-menu>
-                    <g-link class="nav__link" to="/project"><v-btn style="text-transform: none" text>Project</v-btn></g-link>
+                    <g-link class="nav__link" to="/about"><v-btn style="text-transform: none" text>About</v-btn></g-link>
                     <g-link class="nav__link" to="/contact"><v-btn style="text-transform: none" text>Contact us</v-btn></g-link>
                 </nav>
             </div>
