@@ -25,3 +25,5 @@ fields:
   config:
     maxSize: 250
   label: Image
+pages:
+- "**/**/*/Home-1.md"
