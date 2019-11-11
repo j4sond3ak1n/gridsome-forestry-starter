@@ -4,7 +4,7 @@ body: ''
 image: ''
 
 ---
-# In-house digital marketing.
+# In-the-house digital marketing.
 
 # Better. Faster. Easier.
 
