@@ -1,5 +1,5 @@
 <template>
-    <v-app>
+    <v-app class="v-application-wrap">
         <header class="header" :class="{sticky: $route.path === '/' || $route.path.includes('/projects/')}">
             <div class="container">
                 <div class="left">
@@ -11,13 +11,14 @@
                         />
                     </g-link>
                 </div>
-                <nav class="nav right">
+                <nav class="nav">
                     <v-menu offset-y open-on-hover>
                         <template v-slot:activator="{ on }">
                             <g-link>
                                 <v-btn
                                     text
                                     v-on="on"
+                                    style="text-transform: none"
                                     :to="$url('/google-marketing-platform-services/')"
                                     >
                                     Google Marketing Platform Services
@@ -40,6 +41,7 @@
                                 <v-btn
                                     text
                                     v-on="on"
+                                    style="text-transform: none"
                                     :to="$url('/search-tech-and-tools/')"
                                     >
                                     Search Tech & Tools
@@ -56,11 +58,11 @@
                             </v-list-item>
                         </v-list>
                     </v-menu>
-                    <g-link class="nav__link" to="/project"><v-btn text>Project</v-btn></g-link>
-                    <g-link class="nav__link" to="/contact"><v-btn text>Contact us</v-btn></g-link>
+                    <g-link class="nav__link" to="/project"><v-btn style="text-transform: none" text>Project</v-btn></g-link>
+                    <g-link class="nav__link" to="/contact"><v-btn style="text-transform: none" text>Contact us</v-btn></g-link>
                 </nav>
             </div>
-        </header>
+        </header> 
     </v-app> 
 </template>
 
@@ -94,7 +96,9 @@ export default {
 </script>
 
 <style scoped>
-
+.v-application-wrap {
+    max-height: 10vh !important;
+}
 .header.sticky {
     position: fixed;
     top: 0;
