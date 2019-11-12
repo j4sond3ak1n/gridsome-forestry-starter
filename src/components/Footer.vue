@@ -1,7 +1,11 @@
 <template>
-        <div class="container">
-            <span v-html="settings.footer" />
-        </div>
+    <v-container>
+        <v-layout>
+            <v-flex>
+                 <span v-html="settings.footer" />
+            </v-flex>
+        </v-layout>
+    </v-container>
 </template>
 
 <script>

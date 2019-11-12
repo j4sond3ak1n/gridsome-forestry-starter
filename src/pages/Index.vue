@@ -4,7 +4,6 @@
       <v-layout>
         <v-flex>
           <div class="container">
-            <!-- Home page to add home page content -->
             <Hero />
             <ProjectsGrid :projects="$page.projects.edges" />
           </div>

@@ -4,18 +4,18 @@
       :to="item.node.path"
       v-for="item in $page.posts.edges" 
       :key="item.node.id"
-      class="journal-post"
+      class="about-post"
     >
-      <div class="container journal">
-        <h2 class="journal-title">{{ item.node.title }}</h2>
-        <p class="journal-excerpt">{{ item.node.excerpt }}</p>
+      <div class="container about">
+        <h2 class="about-title">{{ item.node.title }}</h2>
+        <p class="about-excerpt">{{ item.node.excerpt }}</p>
       </div>
     </g-link>
   </Layout>
 </template>
 
 <page-query>
-query Journal {
+query about {
 	posts: allProjectPost {
     edges {
       node {
@@ -35,54 +35,49 @@ export default {
 </script>
 
 <style scoped>
-.container.journal {
+.container.about {
   max-width: 720px;
 }
-.journal-hero {
+.about-hero {
   padding: 4rem 0;
   text-align: center;
   color: var(--color-base-1);
 }
-.journal-header {
+.about-header {
   font-size: 3rem;
   font-weight: 700;
   padding: 0;
   margin: 0;
 }
-.journal-post {
+.about-post {
   display: block;
   padding: 2rem 0;
   text-decoration: none;
   transition: background 0.5s ease;
 }
-.journal-post > * {
+.about-post > * {
   transition: transform 0.5s ease;
 }
-.journal-post:hover {
+.about-post:hover {
   background-color: var(--color-base-1);
 }
-.journal-post h1,
-.journal-post h2 {
+.about-post h1,
+.about-post h2 {
   margin: 0;
   padding: 0;
 }
-.journal-title {
+.about-title {
   font-size: 2rem;
   color: var(--color-contrast);
 }
-.journal-excerpt {
+.about-excerpt {
   color: var(--color-contrast-1);
 }
 
 @media (min-width: 560px) {
-  .journal-post {
+  .about-post {
     padding: 3rem 0;
   }
 }
 
-@media (min-width: 860px) {
-  .journal-post {
-    padding: 5rem 0;
-  }
-}
 </style>
