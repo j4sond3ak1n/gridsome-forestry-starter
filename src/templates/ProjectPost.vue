@@ -3,7 +3,7 @@
     <div class="project">
 
       <div class="container">
-
+{{ $path }}
         <div class="project-header">
           <h1 class="project-title" v-html="$page.post.title" />
           <div class="project-info">
