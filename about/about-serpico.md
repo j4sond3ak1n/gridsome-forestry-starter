@@ -4,8 +4,6 @@ body: About Serpico
 image: ''
 
 ---
-# About Serpico
-
 Serpico is a global marketing, consulting and technology platform, designed for in-house digital teams. As a certified Google Marketing Platform partner, Serpico provides the expertise and skills needed to get the most out of the full Google Marketing Platform stack - from search and display to creative and analytics.
 
 This, combined with our suite of proprietary tech and tools, and access to a global, on-demand network of digital marketing resource and expertise, enables in-house digital marketing teams to run campaigns across 175 markets and 86 languages.
