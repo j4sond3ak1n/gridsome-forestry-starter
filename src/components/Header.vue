@@ -2,67 +2,66 @@
     <v-app class="v-application-wrap white" style="z-index: 1">
         <v-container>
             <v-layout>
-                    <nav class="nav">
-                        <v-flex>
-                            <g-link :to="{ name: 'home' }" >
-                                <g-image 
-                                    src="../../static/logo.svg"
-                                    :alt="settings.site_name" 
-                                    style="height: 6rem;"
-                                />
-                            </g-link>
-                        </v-flex>
-                        <v-flex>
-                            <v-menu offset-y open-on-hover>
-                        <template v-slot:activator="{ on }">
-                            <g-link style="text-decoration: none">
-                                <v-btn
-                                    text
-                                    v-on="on"
-                                    style="text-transform: none"
-                                    :to="$url('/google-marketing-platform-services/')"
-                                    >
-                                    Google Marketing Platform Services
-                                </v-btn>
-                            </g-link>
-                        </template> 
-                        <v-list>
-                            <v-list-item
-                            v-for="(item, index) in googleItems"
-                            :key="index"
-                            :to="$url(`${item.url}`)"
-                            >
-                            <v-list-item-title>{{item.title}}</v-list-item-title>
-                            </v-list-item>
-                        </v-list>
-                    </v-menu>
-                    <v-menu offset-y open-on-hover>
-                        <template v-slot:activator="{ on }">
-                            <g-link style="text-decoration: none">
-                                <v-btn
-                                    text
-                                    v-on="on"
-                                    style="text-transform: none"
-                                    :to="$url('/search-tech-and-tools/')"
-                                    >
-                                    Search Tech & Tools
-                                </v-btn>
-                            </g-link>
-                        </template>
-                        <v-list>
-                            <v-list-item
-                            v-for="(item, index) in searchItems"
-                            :key="index"
-                            :to="$url(`${item.url}`)"
-                            >
-                            <v-list-item-title>{{item.title}}</v-list-item-title>
-                            </v-list-item>
-                        </v-list>
-                    </v-menu>
-                     <g-link class="nav__link" to="/about" style="text-decoration: none"><v-btn style="text-transform: none" text>About</v-btn></g-link>
-                    <g-link class="nav__link" to="/contact" style="text-decoration: none"><v-btn style="text-transform: none" color="error" rounded>Contact us</v-btn></g-link>
-                        </v-flex>
-                   
+                <nav class="nav">
+                    <v-flex>
+                        <g-link :to="{ name: 'home' }" >
+                            <g-image 
+                                src="../../static/logo.svg"
+                                :alt="settings.site_name" 
+                                style="height: 5rem;"
+                            />
+                        </g-link>
+                    </v-flex>
+                    <v-flex>
+                        <v-menu offset-y open-on-hover>
+                            <template v-slot:activator="{ on }">
+                                <g-link style="text-decoration: none">
+                                    <v-btn
+                                        text
+                                        v-on="on"
+                                        style="text-transform: none"
+                                        :to="$url('/google-marketing-platform-services/')"
+                                        >
+                                        Google Marketing Platform Services
+                                    </v-btn>
+                                </g-link>
+                            </template> 
+                            <v-list>
+                                <v-list-item
+                                v-for="(item, index) in googleItems"
+                                :key="index"
+                                :to="$url(`${item.url}`)"
+                                >
+                                <v-list-item-title>{{item.title}}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                        </v-menu>
+                        <v-menu offset-y open-on-hover>
+                            <template v-slot:activator="{ on }">
+                                <g-link style="text-decoration: none">
+                                    <v-btn
+                                        text
+                                        v-on="on"
+                                        style="text-transform: none"
+                                        :to="$url('/search-tech-and-tools/')"
+                                        >
+                                        Search Tech & Tools
+                                    </v-btn>
+                                </g-link>
+                            </template>
+                            <v-list>
+                                <v-list-item
+                                v-for="(item, index) in searchItems"
+                                :key="index"
+                                :to="$url(`${item.url}`)"
+                                >
+                                <v-list-item-title>{{item.title}}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
+                        </v-menu>
+                            <g-link class="nav__link" to="/about" style="text-decoration: none"><v-btn style="text-transform: none" text>About</v-btn></g-link>
+                        <g-link class="nav__link" to="/contact" style="text-decoration: none"><v-btn style="text-transform: none" color="error" rounded>Contact us</v-btn></g-link>
+                    </v-flex>
                 </nav>
             </v-layout>
         </v-container>
