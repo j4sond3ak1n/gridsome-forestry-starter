@@ -4,10 +4,6 @@ body: Body
 image: "/uploads/SerpicoHomepageVideo.gif"
 
 ---
-# Header title
+# About Serpico
 
-#### Body text
-
-Even some more text
-
-![](/uploads/GMPSalesPartnerBadge.png)
+Serpico tect etc

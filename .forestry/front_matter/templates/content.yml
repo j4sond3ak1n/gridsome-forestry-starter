@@ -26,5 +26,5 @@ fields:
     maxSize: 250
   label: Image
 pages:
-- "**/**/*/Home-1.md"
 - contact/**/*/Contact.md
+- "**/**/*/Home-1.md"
