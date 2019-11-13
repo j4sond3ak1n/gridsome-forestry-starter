@@ -23,6 +23,18 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
+        path: "contact/**/*.md",
+        typeName: "ContactPost",
+        resolveAbsolutePaths: true,
+        remark: {
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
+      }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
         path: "projects/**/*.md",
         typeName: "ProjectPost",
         resolveAbsolutePaths: true,
